@@ -1,0 +1,12 @@
+.outgame {
+    min-height: 100vh;
+    background: url(../images/main-bg-2.png) no-repeat top left/cover;
+    padding-bottom: 85px;
+    position: relative;
+
+    .container {
+        @media(min-width:1700px) {
+            max-width: 1685px;
+        }
+    }
+}
