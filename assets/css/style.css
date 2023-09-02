@@ -90,7 +90,12 @@ body {
 /*=== components css start === */
 .main-contents {
   min-height: calc(100vh - 95px);
-  background: url(../images/main-bg.png) no-repeat top left/cover;
+  background: url(../images/main-bg-2.png) no-repeat center center/cover;
+}
+@media (min-width: 1200px) {
+  .main-contents {
+    background: url(../images/main-bg-2.png) no-repeat top left/cover;
+  }
 }
 .main-contents .info-wrapper {
   background: rgba(184, 24, 32, 0.937254902);
@@ -140,6 +145,44 @@ body {
   .main-contents .nav-link-wrapper .link-n {
     font-size: 14px;
     padding: 10px;
+  }
+}
+.main-contents .data-body .wrapper {
+  background: #000;
+}
+.main-contents .data-body .wrapper .title {
+  font-size: 34px;
+  padding: 10px 15px;
+}
+.main-contents .data-body .wrapper .right .link-d {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 24px;
+  color: #e7dce2;
+}
+.main-contents .data-body .wrapper .right .link-d.active {
+  background: #c01820;
+}
+@media (max-width: 767px) {
+  .main-contents .data-body .wrapper .right .link-d {
+    font-size: 20px;
+    padding: 10px 25px;
+  }
+}
+.main-contents .data-body .wrapper .inner-content {
+  padding: 100px;
+}
+@media (max-width: 767px) {
+  .main-contents .data-body .wrapper .inner-content {
+    padding: 30px;
+  }
+}
+.main-contents .data-body .wrapper .inner-content p {
+  font-size: 28px;
+}
+@media (max-width: 767px) {
+  .main-contents .data-body .wrapper .inner-content p {
+    font-size: 20px;
   }
 }
 
