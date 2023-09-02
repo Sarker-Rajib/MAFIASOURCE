@@ -1,1 +1,91 @@
-@import"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap";*{margin:0;padding:0;outline:none;box-sizing:border-box}::after,::before{box-sizing:border-box}h1,h2,h3,h4,h5,h6,ol,ul,p,address,strong,i{margin-top:0px;margin-bottom:0px}ul,li{list-style:none}a,a:hover{text-decoration:none}body{font-family:"Roboto",sans-serif;color:#000}@media(min-width: 768px){.w-md-50{width:50%}}/*# sourceMappingURL=style.css.map */
+/*=== abstracts css start === */
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  color: #e7dce2;
+}
+
+@media (min-width: 1340px) {
+  .container {
+    max-width: 1304px;
+  }
+}
+
+/*===// end of base css === */
+/*=== layouts css start === */
+.header {
+  background: #040404;
+}
+.header .logo {
+  font-size: 40px;
+  background: #c01820;
+  padding: 6px 50px;
+  border: 1px solid #4a0c0d;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.header .p-name {
+  font-size: 30px;
+}
+.header .p-name span {
+  color: #c01820;
+}
+.header .coin p {
+  font-size: 21px;
+}
+.header .prog-1 p {
+  font-size: 21px;
+}
+.header .prog-1 .progress-bar {
+  height: 9px;
+  border-radius: 10px;
+  background: rgb(131, 131, 131);
+  background: linear-gradient(180deg, rgb(131, 131, 131) 0%, rgb(194, 194, 194) 100%);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.header .prog-1 .progress-bar .bar {
+  position: absolute;
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+}
+.header .prog-1 .progress-bar .bar.bar-blue {
+  width: 90%;
+  background: #01a9f5;
+}
+.header .prog-1 .progress-bar .bar.bar-green {
+  background: #1cf308;
+  width: 80%;
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */

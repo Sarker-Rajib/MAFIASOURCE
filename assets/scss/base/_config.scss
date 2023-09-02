@@ -1,3 +1,10 @@
 body {
   font-family: 'Bebas Neue', sans-serif;
+  color: $color-white-l;
+}
+
+.container {
+  @media(min-width:1340px) {
+    max-width: 1304px;
+  }
 }
