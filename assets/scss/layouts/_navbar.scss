@@ -13,6 +13,10 @@
     .p-name {
         font-size: 30px;
 
+        @media(max-width:991px) {
+            font-size: 24px;
+        }
+
         span {
             color: $color-red;
         }

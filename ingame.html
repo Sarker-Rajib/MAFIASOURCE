@@ -20,71 +20,81 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-6 col-xl-5">
-          <div class="d-xl-flex align-items-end">
-            <h1 class="logo text-center d-xl-inline-block">Mafiasource</h1>
-            <h2 class="p-name ps-md-3 text-center text-xl-start">Welkom terug <span>QRU</span></h2>
+          <div class="d-flex justify-content-between">
+            <div class="d-xl-flex align-items-end">
+              <h1 class="logo text-center d-xl-inline-block">Mafiasource</h1>
+              <h2 class="p-name ps-md-3 text-center text-xl-start">Welkom terug <span>QRU</span></h2>
+            </div>
+            <div class="flex-shrink-0 p-2 d-md-none">
+              <img width="40" id="btOpen" class="" src="assets/images/menu-svgrepo-com.svg" alt="menu">
+              <img width="45" id="btClose" class="d-none" src="assets/images/close-square-svgrepo-com.svg" alt="menu">
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 px-xl-0 coin">
-          <div class="row py-2 py-md-3">
-            <div class="col-6">
+          <div id="coinData" class="d-none d-md-block">
+            <div class=" row py-2 py-md-3">
+              <div class="col-6">
 
-              <div class="d-flex align-items-center">
-                <div class="image flex-shrinl-0">
-                  <img src="assets/images/money-coin.png" alt="coin">
+                <div class="d-flex align-items-center">
+                  <div class="image flex-shrinl-0">
+                    <img src="assets/images/money-coin.png" alt="coin">
+                  </div>
+                  <div class="text">
+                    <p>Cash: € 20.387.495</p>
+                  </div>
                 </div>
-                <div class="text">
-                  <p>Cash: € 20.387.495</p>
+
+                <div class="d-flex align-items-center">
+                  <div class="image flex-shrinl-0">
+                    <img src="assets/images/money-coin.png" alt="coin">
+                  </div>
+                  <div class="text">
+                    <p>bank: € 20.387.495</p>
+                  </div>
                 </div>
+
               </div>
+              <div class="col-6">
 
-              <div class="d-flex align-items-center">
-                <div class="image flex-shrinl-0">
-                  <img src="assets/images/money-coin.png" alt="coin">
+                <div class="d-flex align-items-center">
+                  <div class="image flex-shrinl-0">
+                    <img src="assets/images/money-coin.png" alt="coin">
+                  </div>
+                  <div class="text">
+                    <p>Staat: HAWAI</p>
+                  </div>
                 </div>
-                <div class="text">
-                  <p>bank: € 20.387.495</p>
+                <div class="d-flex align-items-center">
+                  <div class="image flex-shrinl-0">
+                    <img src="assets/images/money-coin.png" alt="coin">
+                  </div>
+                  <div class="text">
+                    <p>Stad: Miami</p>
+                  </div>
                 </div>
+
               </div>
-
-            </div>
-            <div class="col-6">
-
-              <div class="d-flex align-items-center">
-                <div class="image flex-shrinl-0">
-                  <img src="assets/images/money-coin.png" alt="coin">
-                </div>
-                <div class="text">
-                  <p>Staat: HAWAI</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="image flex-shrinl-0">
-                  <img src="assets/images/money-coin.png" alt="coin">
-                </div>
-                <div class="text">
-                  <p>Stad: Miami</p>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-4 ">
-          <div class="row py-2 py-md-3">
-            <div class="col-6 ">
-              <div class="prog-1">
-                <p>Legendary Godfather</p>
-                <div class="progress-bar">
-                  <span class="bar bar-blue"></span>
+          <div id="prog-report" class="d-none d-md-block">
+            <div class="row py-2 py-md-3">
+              <div class="col-6 ">
+                <div class="prog-1">
+                  <p>Legendary Godfather</p>
+                  <div class="progress-bar">
+                    <span class="bar bar-blue"></span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6">
-              <div class="prog-1">
-                <p>Leven - 75%</p>
-                <div class="progress-bar">
-                  <span class="bar bar-green"></span>
+              <div class="col-6">
+                <div class="prog-1">
+                  <p>Leven - 75%</p>
+                  <div class="progress-bar">
+                    <span class="bar bar-green"></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -134,7 +144,19 @@
         <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
           <div class="left">
             <ul class="p-0 links">
-              <li><a href="#" class="link-n active">Algemeen</a></li>
+              <li class="position-relative"><a href="#" class="link-n active" id="trigger-nva">Algemeen</a>
+                <ul class="dropdown-c-menu d-none p-0" id="dropIng">
+                  <li><a class="d-item" href="#">Action</a></li>
+                  <li><a class="d-item" href="#">Another action</a></li>
+                  <li><a class="d-item" href="#">Something else 1</a></li>
+                  <li><a class="d-item" href="#">Something else 2</a></li>
+                  <li><a class="d-item" href="#">Something else 3</a></li>
+                  <li><a class="d-item" href="#">Something else 4</a></li>
+                  <li><a class="d-item" href="#">Something else 5</a></li>
+                  <li><a class="d-item" href="#">Something else 6</a></li>
+                  <li><a class="d-item" href="#">Something else 7</a></li>
+                </ul>
+              </li>
               <li><a href="#" class="link-n">SPEL</a></li>
               <li><a href="#" class="link-n">Communicatie</a></li>
               <li><a href="#" class="link-n">Casino</a></li>

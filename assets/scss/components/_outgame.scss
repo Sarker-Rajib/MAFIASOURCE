@@ -38,13 +38,11 @@
         .navs {
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
-            overflow: hidden;
             margin-bottom: 25px;
 
             @media(max-width:991px) {
                 border-radius: 5px;
             }
-
 
             .link-nv {
                 font-size: 36px;
@@ -64,6 +62,24 @@
 
                 &.active {
                     background: #92141a;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            .dropdown-menu {
+                background: #000;
+                border: 1px solid $color-red;
+
+                .dropdown-item {
+                    color: $color-white-l;
+                    font-size: 20px;
+
+                    &:hover {
+                        background: $color-red;
+                    }
                 }
             }
 

@@ -28,6 +28,7 @@ a, a:hover {
 body {
   font-family: "Bebas Neue", sans-serif;
   color: #e7dce2;
+  background: #000;
 }
 
 @media (min-width: 1340px) {
@@ -51,6 +52,11 @@ body {
 }
 .header .p-name {
   font-size: 30px;
+}
+@media (max-width: 991px) {
+  .header .p-name {
+    font-size: 24px;
+  }
 }
 .header .p-name span {
   color: #c01820;
@@ -164,6 +170,30 @@ body {
     padding: 10px;
   }
 }
+.main-contents .nav-link-wrapper .dropdown-c-menu {
+  position: absolute;
+  min-width: 200px;
+  display: block;
+  left: 0;
+  top: 100%;
+  background: #000;
+  border: 1px solid #c01820;
+}
+.main-contents .nav-link-wrapper .dropdown-c-menu .d-item {
+  color: #e7dce2;
+  font-size: 20px;
+  display: block;
+  white-space: nowrap;
+  padding: 3px 10px;
+}
+.main-contents .nav-link-wrapper .dropdown-c-menu .d-item:hover {
+  background: #c01820;
+}
+@media (max-width: 767px) {
+  .main-contents .nav-link-wrapper .dropdown-c-menu .d-item {
+    font-size: 16px;
+  }
+}
 .main-contents .data-body .wrapper {
   background: #000;
 }
@@ -244,7 +274,6 @@ body {
 .outgame .menuwrapper .navs {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  overflow: hidden;
   margin-bottom: 25px;
 }
 @media (max-width: 991px) {
@@ -272,6 +301,20 @@ body {
 }
 .outgame .menuwrapper .navs .link-nv.active {
   background: #92141a;
+}
+.outgame .menuwrapper .navs .link-nv::after {
+  display: none;
+}
+.outgame .menuwrapper .navs .dropdown-menu {
+  background: #000;
+  border: 1px solid #c01820;
+}
+.outgame .menuwrapper .navs .dropdown-menu .dropdown-item {
+  color: #e7dce2;
+  font-size: 20px;
+}
+.outgame .menuwrapper .navs .dropdown-menu .dropdown-item:hover {
+  background: #c01820;
 }
 .outgame .menuwrapper .member-stats {
   background: rgba(0, 0, 0, 0.9607843137);

@@ -71,6 +71,32 @@
             }
         }
 
+        .dropdown-c-menu {
+            position: absolute;
+            min-width: 200px;
+            display: block;
+            left: 0;
+            top: 100%;
+            background: #000;
+            border: 1px solid $color-red;
+
+            .d-item {
+                color: $color-white-l;
+                font-size: 20px;
+                display: block;
+                white-space: nowrap;
+                padding: 3px 10px;
+
+                &:hover {
+                    background: $color-red;
+                }
+
+                @media(max-width:767px) {
+                    font-size: 16px;
+                }
+            }
+        }
+
     }
 
     // ------
