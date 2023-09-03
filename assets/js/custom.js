@@ -12,6 +12,12 @@
 //     document.getElementById("btOpen").classList.toggle("d-none");
 // })
 
-document.getElementById("trigger-nva").addEventListener('click', () => {
-    document.getElementById("dropIng").classList.toggle("d-none");
-})
+// document.getElementById("trigger-nva").addEventListener('click', () => {
+//     const cNav = document.getElementById("dropIng");
+
+//     if (cNav.style.display === "none") {
+//         cNav.style.display = "block";
+//     } else {
+//         cNav.style.display = "none";
+//     }
+// })

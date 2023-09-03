@@ -204,6 +204,9 @@ body {
 .main-contents .nav-link-wrapper .link-n.active {
   background: #c01820;
 }
+.main-contents .nav-link-wrapper .link-n:hover {
+  background: #c01820;
+}
 @media (max-width: 767px) {
   .main-contents .nav-link-wrapper .link-n {
     font-size: 14px;
@@ -218,6 +221,7 @@ body {
   top: 100%;
   background: #000;
   border: 1px solid #c01820;
+  display: none;
 }
 .main-contents .nav-link-wrapper .dropdown-c-menu .d-item {
   color: #e7dce2;
@@ -225,6 +229,7 @@ body {
   display: block;
   white-space: nowrap;
   padding: 3px 10px;
+  margin: 0;
 }
 .main-contents .nav-link-wrapper .dropdown-c-menu .d-item:hover {
   background: #c01820;
@@ -233,6 +238,9 @@ body {
   .main-contents .nav-link-wrapper .dropdown-c-menu .d-item {
     font-size: 16px;
   }
+}
+.main-contents .nav-link-wrapper .d-trigger:hover .dropdown-c-menu {
+  display: block;
 }
 .main-contents .data-body .wrapper {
   background: #000;
@@ -361,6 +369,11 @@ body {
 }
 .outgame .menuwrapper .navs .dropdown-menu .dropdown-item:hover {
   background: #c01820;
+}
+.outgame .menuwrapper .navs .dropdown-menu:hover > .dropdown-item {
+  display: block;
+  z-index: 999;
+  height: auto;
 }
 .outgame .menuwrapper .member-stats {
   background: rgba(0, 0, 0, 0.9607843137);

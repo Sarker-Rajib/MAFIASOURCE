@@ -65,11 +65,16 @@
                 background: $color-red;
             }
 
+            &:hover {
+                background: $color-red;
+            }
+
             @media(max-width:767px) {
                 font-size: 14px;
                 padding: 10px;
             }
         }
+
 
         .dropdown-c-menu {
             position: absolute;
@@ -79,6 +84,7 @@
             top: 100%;
             background: #000;
             border: 1px solid $color-red;
+            display: none;
 
             .d-item {
                 color: $color-white-l;
@@ -86,6 +92,7 @@
                 display: block;
                 white-space: nowrap;
                 padding: 3px 10px;
+                margin: 0;
 
                 &:hover {
                     background: $color-red;
@@ -94,6 +101,12 @@
                 @media(max-width:767px) {
                     font-size: 16px;
                 }
+            }
+        }
+
+        .d-trigger:hover {
+            .dropdown-c-menu {
+                display: block;
             }
         }
 
