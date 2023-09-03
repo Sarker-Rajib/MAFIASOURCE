@@ -375,6 +375,9 @@ body {
   z-index: 999;
   height: auto;
 }
+.outgame .menuwrapper .navs .dropdown:hover .dropdown-menu {
+  display: block;
+}
 .outgame .menuwrapper .member-stats {
   background: rgba(0, 0, 0, 0.9607843137);
   border-radius: 5px;
