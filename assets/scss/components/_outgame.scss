@@ -81,6 +81,12 @@
                         background: $color-red;
                     }
                 }
+
+                &:hover>.dropdown-item {
+                    display: block;
+                    z-index: 999;
+                    height: auto;
+                }
             }
 
         }
