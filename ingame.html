@@ -26,13 +26,13 @@
               <h2 class="p-name ps-md-3 text-center text-xl-start">Welkom terug <span>QRU</span></h2>
             </div>
             <div class="flex-shrink-0 p-2 d-md-none">
-              <img width="40" id="btOpen" class="" src="assets/images/menu-svgrepo-com.svg" alt="menu">
-              <img width="45" id="btClose" class="d-none" src="assets/images/close-square-svgrepo-com.svg" alt="menu">
+              <img width="40" class="" src="assets/images/menu-svgrepo-com.svg" alt="menu" data-bs-toggle="offcanvas"
+                data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
             </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 px-xl-0 coin">
-          <div id="coinData" class="d-none d-md-block">
+          <div class="d-none d-md-block">
             <div class=" row py-2 py-md-3">
               <div class="col-6">
 
@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="col-md-6 col-xl-4 ">
-          <div id="prog-report" class="d-none d-md-block">
+          <div class="d-none d-md-block">
             <div class="row py-2 py-md-3">
               <div class="col-6 ">
                 <div class="prog-1">
@@ -103,6 +103,120 @@
       </div>
     </div>
   </header>
+
+  <!-- sidenav -->
+  <div class="offcanvas side-navbar offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h1 class="b-logo text-center d-xl-inline-block">Mafiasource</h1>
+      <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row">
+        <div class="col-md-6 coin">
+          <div class=" row py-2 py-md-3">
+            <div class="col-6">
+
+              <div class="d-flex align-items-center">
+                <div class="image flex-shrinl-0">
+                  <img src="assets/images/money-coin.png" alt="coin">
+                </div>
+                <div class="text">
+                  <p>Cash: € 20.387.495</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <div class="image flex-shrinl-0">
+                  <img src="assets/images/money-coin.png" alt="coin">
+                </div>
+                <div class="text">
+                  <p>bank: € 20.387.495</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-6">
+
+              <div class="d-flex align-items-center">
+                <div class="image flex-shrinl-0">
+                  <img src="assets/images/money-coin.png" alt="coin">
+                </div>
+                <div class="text">
+                  <p>Staat: HAWAI</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="image flex-shrinl-0">
+                  <img src="assets/images/money-coin.png" alt="coin">
+                </div>
+                <div class="text">
+                  <p>Stad: Miami</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row py-2 py-md-3">
+            <div class="col-6 ">
+              <div class="prog-1">
+                <p>Legendary Godfather</p>
+                <div class="progress-bar">
+                  <span class="bar bar-blue"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="prog-1">
+                <p>Leven - 75%</p>
+                <div class="progress-bar">
+                  <span class="bar bar-green"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="menu-links">
+        <!--  -->
+        <div class="link-wrapper">
+          <h4 class="ttle">Title</h4>
+          <ul style="padding-left: 15px;">
+            <li><a class="m-link" href="#">lorem</a></li>
+            <li><a class="m-link" href="#">ipsum</a></li>
+            <li><a class="m-link" href="#">dolor</a></li>
+            <li><a class="m-link" href="#">sdemoe</a></li>
+            <li><a class="m-link" href="#">demo</a></li>
+          </ul>
+        </div>
+        <!--  -->
+        <div class="link-wrapper">
+          <h4 class="ttle">Title</h4>
+          <ul style="padding-left: 15px;">
+            <li><a class="m-link" href="#">lorem</a></li>
+            <li><a class="m-link" href="#">ipsum</a></li>
+            <li><a class="m-link" href="#">dolor</a></li>
+            <li><a class="m-link" href="#">sdemoe</a></li>
+            <li><a class="m-link" href="#">demo</a></li>
+          </ul>
+        </div>
+        <!--  -->
+        <div class="link-wrapper">
+          <h4 class="ttle">Title</h4>
+          <ul style="padding-left: 15px;">
+            <li><a class="m-link" href="#">lorem</a></li>
+            <li><a class="m-link" href="#">ipsum</a></li>
+            <li><a class="m-link" href="#">dolor</a></li>
+            <li><a class="m-link" href="#">sdemoe</a></li>
+            <li><a class="m-link" href="#">demo</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- all codes for ===***header***=== ended -->
 
 
@@ -179,7 +293,6 @@
       </div>
     </div>
 
-
     <!-- data body -->
     <div class="data-body pb-3 mt-3 mt-lg-5">
       <div class="container">
@@ -198,10 +311,43 @@
           </div>
 
           <div class="inner-content">
-            <p>HERE 12/12,</p>
-            <p>6/12 + 6/12,</p>
-            <p>3/12+9/12;</p>
-            <p>4/12+8/12</p>
+            <div class="row g-2">
+              <div class="col-12">
+                <div class="wrapper">
+                  <p>12/12,</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="wrapper">
+                  <p>6/12</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="wrapper">
+                  <p>6/12</p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="wrapper">
+                  <p>3/12</p>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="wrapper">
+                  <p>9/12</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="wrapper">
+                  <p>4/12</p>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="wrapper">
+                  <p>8/12</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

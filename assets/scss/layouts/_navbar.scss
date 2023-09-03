@@ -1,4 +1,5 @@
-.header {
+.header,
+.side-navbar {
     background: #040404;
 
     .logo {
@@ -58,6 +59,47 @@
                 &.bar-green {
                     background: #1cf308;
                     width: 80%;
+                }
+            }
+        }
+    }
+}
+
+.side-navbar {
+    background: #000;
+
+    .offcanvas-header {
+
+        .b-logo {
+            font-size: 40px;
+            background: $color-red;
+            padding: 6px 50px;
+            border: 1px solid #4a0c0d;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
+
+    .offcanvas-body {
+        .menu-links {
+            .link-wrapper {
+                padding-bottom: 25px;
+
+                .ttle {
+                    font-size: 20px;
+                    border-bottom: 1px solid $color-red;
+                    margin-bottom: 5px;
+                }
+
+                .m-link {
+                    color: $color-white-l;
+                    font-size: 18px;
+                    display: inline-block;
+                    margin: 3px 0;
+
+                    &:hover {
+                        color: $color-red;
+                    }
                 }
             }
         }

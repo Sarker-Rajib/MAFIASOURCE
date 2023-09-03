@@ -128,17 +128,25 @@
             }
 
             .inner-content {
-                padding: 100px;
+                padding: 60px;
+                margin-bottom: 40px;
 
                 @media(max-width:767px) {
                     padding: 30px;
                 }
 
-                p {
-                    font-size: 28px;
+                .wrapper {
+                    border-radius: 5px;
+                    padding: 10px;
+                    border: 1px solid $color-red;
 
-                    @media(max-width:767px) {
-                        font-size: 20px;
+
+                    p {
+                        font-size: 28px;
+
+                        @media(max-width:767px) {
+                            font-size: 20px;
+                        }
                     }
                 }
             }

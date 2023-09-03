@@ -39,10 +39,12 @@ body {
 
 /*===// end of base css === */
 /*=== layouts css start === */
-.header {
+.header,
+.side-navbar {
   background: #040404;
 }
-.header .logo {
+.header .logo,
+.side-navbar .logo {
   font-size: 40px;
   background: #c01820;
   padding: 6px 50px;
@@ -50,24 +52,30 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.header .p-name {
+.header .p-name,
+.side-navbar .p-name {
   font-size: 30px;
 }
 @media (max-width: 991px) {
-  .header .p-name {
+  .header .p-name,
+  .side-navbar .p-name {
     font-size: 24px;
   }
 }
-.header .p-name span {
+.header .p-name span,
+.side-navbar .p-name span {
   color: #c01820;
 }
-.header .coin p {
+.header .coin p,
+.side-navbar .coin p {
   font-size: 21px;
 }
-.header .prog-1 p {
+.header .prog-1 p,
+.side-navbar .prog-1 p {
   font-size: 21px;
 }
-.header .prog-1 .progress-bar {
+.header .prog-1 .progress-bar,
+.side-navbar .prog-1 .progress-bar {
   height: 9px;
   border-radius: 10px;
   background: rgb(131, 131, 131);
@@ -75,7 +83,8 @@ body {
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-.header .prog-1 .progress-bar .bar {
+.header .prog-1 .progress-bar .bar,
+.side-navbar .prog-1 .progress-bar .bar {
   position: absolute;
   display: block;
   height: 100%;
@@ -83,13 +92,44 @@ body {
   top: 0;
   left: 0;
 }
-.header .prog-1 .progress-bar .bar.bar-blue {
+.header .prog-1 .progress-bar .bar.bar-blue,
+.side-navbar .prog-1 .progress-bar .bar.bar-blue {
   width: 90%;
   background: #01a9f5;
 }
-.header .prog-1 .progress-bar .bar.bar-green {
+.header .prog-1 .progress-bar .bar.bar-green,
+.side-navbar .prog-1 .progress-bar .bar.bar-green {
   background: #1cf308;
   width: 80%;
+}
+
+.side-navbar {
+  background: #000;
+}
+.side-navbar .offcanvas-header .b-logo {
+  font-size: 40px;
+  background: #c01820;
+  padding: 6px 50px;
+  border: 1px solid #4a0c0d;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.side-navbar .offcanvas-body .menu-links .link-wrapper {
+  padding-bottom: 25px;
+}
+.side-navbar .offcanvas-body .menu-links .link-wrapper .ttle {
+  font-size: 20px;
+  border-bottom: 1px solid #c01820;
+  margin-bottom: 5px;
+}
+.side-navbar .offcanvas-body .menu-links .link-wrapper .m-link {
+  color: #e7dce2;
+  font-size: 18px;
+  display: inline-block;
+  margin: 3px 0;
+}
+.side-navbar .offcanvas-body .menu-links .link-wrapper .m-link:hover {
+  color: #c01820;
 }
 
 .footer {
@@ -217,18 +257,24 @@ body {
   }
 }
 .main-contents .data-body .wrapper .inner-content {
-  padding: 100px;
+  padding: 60px;
+  margin-bottom: 40px;
 }
 @media (max-width: 767px) {
   .main-contents .data-body .wrapper .inner-content {
     padding: 30px;
   }
 }
-.main-contents .data-body .wrapper .inner-content p {
+.main-contents .data-body .wrapper .inner-content .wrapper {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #c01820;
+}
+.main-contents .data-body .wrapper .inner-content .wrapper p {
   font-size: 28px;
 }
 @media (max-width: 767px) {
-  .main-contents .data-body .wrapper .inner-content p {
+  .main-contents .data-body .wrapper .inner-content .wrapper p {
     font-size: 20px;
   }
 }
