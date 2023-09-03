@@ -1,9 +1,13 @@
 .outgame {
     min-height: 100vh;
     background: url(../images/main-bg-2.png) no-repeat top left/cover;
-    padding-bottom: 85px;
+    padding-bottom: 90px;
     position: relative;
     text-transform: uppercase;
+
+    @media(max-width:1199px) {
+        padding-bottom: 200px;
+    }
 
     .container {
         @media(min-width:1700px) {
@@ -21,13 +25,26 @@
     }
 
     .menuwrapper {
-        max-width: 980px;
+        max-width: 800px;
+
+        @media(min-width:1600px) {
+            max-width: 980px;
+        }
+
+        @media(max-width:1199px) {
+            margin: auto;
+        }
 
         .navs {
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             overflow: hidden;
             margin-bottom: 25px;
+
+            @media(max-width:991px) {
+                border-radius: 5px;
+            }
+
 
             .link-nv {
                 font-size: 36px;
@@ -36,6 +53,14 @@
                 display: inline-block;
                 line-height: 1;
                 background: #000000f5;
+
+                @media(max-width:1400px) {
+                    font-size: 30px;
+                }
+
+                @media(max-width:400px) {
+                    font-size: 25px;
+                }
 
                 &.active {
                     background: #92141a;
@@ -50,6 +75,10 @@
 
             p {
                 font-size: 28px;
+
+                @media(max-width:1400px) {
+                    font-size: 24px;
+                }
             }
         }
 
@@ -61,6 +90,7 @@
             .input-group {
                 border: 1px solid #4a0c0d;
                 border-radius: 13px;
+                overflow: hidden;
                 background: #000;
                 background: linear-gradient(90deg, rgb(12, 13, 13) 0%, rgb(0, 0, 0) 100%);
 
@@ -87,8 +117,17 @@
     }
 
     .inner-wrap {
-        max-width: 980px;
+        max-width: 800px;
         padding-top: 60px;
+
+        @media(min-width:1600px) {
+            max-width: 980px;
+        }
+
+        @media(max-width:1199px) {
+            margin: auto;
+        }
+
 
         .text-wrapper {
             border-radius: 13px;

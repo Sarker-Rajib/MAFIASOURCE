@@ -97,6 +97,11 @@ body {
 .footer p {
   font-size: 24px;
 }
+@media (max-width: 767px) {
+  .footer p {
+    font-size: 18px;
+  }
+}
 
 /*===// end of layouts css === */
 /*=== components css start === */
@@ -201,9 +206,14 @@ body {
 .outgame {
   min-height: 100vh;
   background: url(../images/main-bg-2.png) no-repeat top left/cover;
-  padding-bottom: 85px;
+  padding-bottom: 90px;
   position: relative;
   text-transform: uppercase;
+}
+@media (max-width: 1199px) {
+  .outgame {
+    padding-bottom: 200px;
+  }
 }
 @media (min-width: 1700px) {
   .outgame .container {
@@ -219,13 +229,28 @@ body {
   border-bottom-right-radius: 20px;
 }
 .outgame .menuwrapper {
-  max-width: 980px;
+  max-width: 800px;
+}
+@media (min-width: 1600px) {
+  .outgame .menuwrapper {
+    max-width: 980px;
+  }
+}
+@media (max-width: 1199px) {
+  .outgame .menuwrapper {
+    margin: auto;
+  }
 }
 .outgame .menuwrapper .navs {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   overflow: hidden;
   margin-bottom: 25px;
+}
+@media (max-width: 991px) {
+  .outgame .menuwrapper .navs {
+    border-radius: 5px;
+  }
 }
 .outgame .menuwrapper .navs .link-nv {
   font-size: 36px;
@@ -234,6 +259,16 @@ body {
   display: inline-block;
   line-height: 1;
   background: rgba(0, 0, 0, 0.9607843137);
+}
+@media (max-width: 1400px) {
+  .outgame .menuwrapper .navs .link-nv {
+    font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .outgame .menuwrapper .navs .link-nv {
+    font-size: 25px;
+  }
 }
 .outgame .menuwrapper .navs .link-nv.active {
   background: #92141a;
@@ -245,6 +280,11 @@ body {
 .outgame .menuwrapper .member-stats p {
   font-size: 28px;
 }
+@media (max-width: 1400px) {
+  .outgame .menuwrapper .member-stats p {
+    font-size: 24px;
+  }
+}
 .outgame .menuwrapper .login {
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.6980392157);
@@ -253,6 +293,7 @@ body {
 .outgame .menuwrapper .login .input-group {
   border: 1px solid #4a0c0d;
   border-radius: 13px;
+  overflow: hidden;
   background: #000;
   background: linear-gradient(90deg, rgb(12, 13, 13) 0%, rgb(0, 0, 0) 100%);
 }
@@ -273,8 +314,18 @@ body {
   width: 100%;
 }
 .outgame .inner-wrap {
-  max-width: 980px;
+  max-width: 800px;
   padding-top: 60px;
+}
+@media (min-width: 1600px) {
+  .outgame .inner-wrap {
+    max-width: 980px;
+  }
+}
+@media (max-width: 1199px) {
+  .outgame .inner-wrap {
+    margin: auto;
+  }
 }
 .outgame .inner-wrap .text-wrapper {
   border-radius: 13px;
