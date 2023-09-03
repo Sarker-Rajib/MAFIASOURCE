@@ -95,7 +95,7 @@ body {
   width: 100%;
 }
 .footer p {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 /*===// end of layouts css === */
@@ -203,11 +203,156 @@ body {
   background: url(../images/main-bg-2.png) no-repeat top left/cover;
   padding-bottom: 85px;
   position: relative;
+  text-transform: uppercase;
 }
 @media (min-width: 1700px) {
   .outgame .container {
     max-width: 1685px;
   }
+}
+.outgame .logo {
+  font-size: 40px;
+  background: #c01820;
+  padding: 6px 50px;
+  border: 1px solid #4a0c0d;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.outgame .menuwrapper {
+  max-width: 980px;
+}
+.outgame .menuwrapper .navs {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.outgame .menuwrapper .navs .link-nv {
+  font-size: 36px;
+  color: #e7dce2;
+  padding: 10px 20px;
+  display: inline-block;
+  line-height: 1;
+  background: rgba(0, 0, 0, 0.9607843137);
+}
+.outgame .menuwrapper .navs .link-nv.active {
+  background: #92141a;
+}
+.outgame .menuwrapper .member-stats {
+  background: rgba(0, 0, 0, 0.9607843137);
+  border-radius: 5px;
+}
+.outgame .menuwrapper .member-stats p {
+  font-size: 28px;
+}
+.outgame .menuwrapper .login {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6980392157);
+  padding: 12px 15px;
+}
+.outgame .menuwrapper .login .input-group {
+  border: 1px solid #4a0c0d;
+  border-radius: 13px;
+  background: #000;
+  background: linear-gradient(90deg, rgb(12, 13, 13) 0%, rgb(0, 0, 0) 100%);
+}
+.outgame .menuwrapper .login .input-group .input-group-text {
+  background: transparent;
+  border-color: #000;
+}
+.outgame .menuwrapper .login .input-group .in-place {
+  background: transparent;
+  border-color: #000;
+  color: #e7dce2;
+}
+.outgame .menuwrapper .login .btn-login {
+  border-radius: 7px;
+  background: #92141a;
+  background: linear-gradient(270deg, rgba(146, 20, 26, 0.89) 0%, rgba(112, 16, 20, 0.9) 50%, rgba(112, 16, 20, 0.81) 83%, rgba(112, 16, 20, 0.9) 100%);
+  height: 100%;
+  width: 100%;
+}
+.outgame .inner-wrap {
+  max-width: 980px;
+  padding-top: 60px;
+}
+.outgame .inner-wrap .text-wrapper {
+  border-radius: 13px;
+  background: linear-gradient(90deg, rgba(12, 13, 13, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+  padding: 35px;
+  margin-bottom: 45px;
+}
+.outgame .inner-wrap .text-wrapper .tex-p {
+  padding-bottom: 80px;
+}
+.outgame .inner-wrap .text-wrapper .tex-p .i-text {
+  font-size: 30px;
+  padding-bottom: 45px;
+}
+.outgame .inner-wrap .text-wrapper .tex-p .inputs {
+  border: 1px solid #4a0c0d;
+  padding: 12px;
+  border-radius: 13px;
+  background: #000;
+  background: linear-gradient(90deg, rgb(12, 13, 13) 0%, rgb(0, 0, 0) 100%);
+  font-size: 25px;
+  color: #e7dce2;
+}
+.outgame .inner-wrap .stat-and-entry h2 {
+  font-size: 30px;
+  color: rgba(231, 220, 226, 0.2509803922);
+  padding: 0;
+}
+.outgame .inner-wrap .stat-and-entry .player-details {
+  border-radius: 13px;
+  background: linear-gradient(90deg, rgba(12, 13, 13, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+  padding: 20px;
+  height: 100%;
+}
+.outgame .inner-wrap .stat-and-entry .player-details p {
+  font-size: 24px;
+  color: #e7dce2;
+  text-transform: uppercase;
+}
+.outgame .inner-wrap .stat-and-entry .rewards {
+  padding: 20px;
+  border-radius: 13px;
+  background: linear-gradient(90deg, rgba(12, 13, 13, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+  height: 100%;
+}
+.outgame .inner-wrap .stat-and-entry .rewards .value {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.outgame .inner-wrap .stat-and-entry .rewards .value.v1 {
+  color: #ffd700;
+}
+.outgame .inner-wrap .stat-and-entry .rewards .value.v2 {
+  color: #c0c0c0;
+}
+.outgame .inner-wrap .stat-and-entry .rewards .value.v3 {
+  color: #cd7f32;
+}
+.outgame .inner-wrap .stat-and-entry .entry {
+  height: 100%;
+}
+.outgame .inner-wrap .stat-and-entry .entry .btn-entry {
+  height: 100%;
+  width: 100%;
+  border-radius: 13px;
+  border: none;
+  line-height: 1.2;
+  background: linear-gradient(180deg, rgba(146, 20, 26, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+  color: #e7dce2;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 72px;
+  transition: all 0.3s;
+}
+.outgame .inner-wrap .stat-and-entry .entry .btn-entry:hover {
+  background: linear-gradient(90deg, rgba(146, 20, 26, 0.7490196078) 0%, rgba(0, 0, 0, 0.7490196078) 100%);
 }
 
 /*===// end of components css === *//*# sourceMappingURL=style.css.map */
