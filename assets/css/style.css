@@ -464,11 +464,20 @@ body {
   background: linear-gradient(90deg, rgba(12, 13, 13, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
   padding: 20px;
   height: 100%;
+  position: relative;
 }
 .outgame .inner-wrap .stat-and-entry .player-details p {
   font-size: 24px;
   color: #e7dce2;
   text-transform: uppercase;
+}
+.outgame .inner-wrap .stat-and-entry .player-details .position {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 150px;
+  line-height: 0.9;
+  opacity: 0.15;
 }
 .outgame .inner-wrap .stat-and-entry .rewards {
   padding: 20px;
