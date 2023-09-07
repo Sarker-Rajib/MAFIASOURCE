@@ -52,30 +52,27 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.header .p-name,
-.side-navbar .p-name {
+
+.p-name {
   font-size: 30px;
 }
 @media (max-width: 991px) {
-  .header .p-name,
-  .side-navbar .p-name {
+  .p-name {
     font-size: 24px;
   }
 }
-.header .p-name span,
-.side-navbar .p-name span {
+.p-name span {
   color: #c01820;
 }
-.header .coin p,
-.side-navbar .coin p {
+
+.coin p {
   font-size: 21px;
 }
-.header .prog-1 p,
-.side-navbar .prog-1 p {
+
+.prog-1 p {
   font-size: 21px;
 }
-.header .prog-1 .progress-bar,
-.side-navbar .prog-1 .progress-bar {
+.prog-1 .progress-bar {
   height: 9px;
   border-radius: 10px;
   background: rgb(131, 131, 131);
@@ -83,8 +80,7 @@ body {
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-.header .prog-1 .progress-bar .bar,
-.side-navbar .prog-1 .progress-bar .bar {
+.prog-1 .progress-bar .bar {
   position: absolute;
   display: block;
   height: 100%;
@@ -92,44 +88,13 @@ body {
   top: 0;
   left: 0;
 }
-.header .prog-1 .progress-bar .bar.bar-blue,
-.side-navbar .prog-1 .progress-bar .bar.bar-blue {
+.prog-1 .progress-bar .bar.bar-blue {
   width: 90%;
   background: #01a9f5;
 }
-.header .prog-1 .progress-bar .bar.bar-green,
-.side-navbar .prog-1 .progress-bar .bar.bar-green {
+.prog-1 .progress-bar .bar.bar-green {
   background: #1cf308;
   width: 80%;
-}
-
-.side-navbar {
-  background: #000;
-}
-.side-navbar .offcanvas-header .b-logo {
-  font-size: 40px;
-  background: #c01820;
-  padding: 6px 50px;
-  border: 1px solid #4a0c0d;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.side-navbar .offcanvas-body .menu-links .link-wrapper {
-  padding-bottom: 25px;
-}
-.side-navbar .offcanvas-body .menu-links .link-wrapper .ttle {
-  font-size: 20px;
-  border-bottom: 1px solid #c01820;
-  margin-bottom: 5px;
-}
-.side-navbar .offcanvas-body .menu-links .link-wrapper .m-link {
-  color: #e7dce2;
-  font-size: 18px;
-  display: inline-block;
-  margin: 3px 0;
-}
-.side-navbar .offcanvas-body .menu-links .link-wrapper .m-link:hover {
-  color: #c01820;
 }
 
 .footer {
@@ -191,9 +156,10 @@ body {
 .main-contents .nav-link-wrapper {
   background: rgba(12, 13, 13, 0.7607843137);
 }
-.main-contents .nav-link-wrapper ul {
+.main-contents .nav-link-wrapper .links {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 .main-contents .nav-link-wrapper .link-n {
   display: inline-block;
@@ -209,7 +175,7 @@ body {
 }
 @media (max-width: 767px) {
   .main-contents .nav-link-wrapper .link-n {
-    font-size: 14px;
+    font-size: 20px;
     padding: 10px;
   }
 }
@@ -222,6 +188,12 @@ body {
   background: #000;
   border: 1px solid #c01820;
   display: none;
+  z-index: 999;
+}
+@media (min-width: 768px) {
+  .main-contents .nav-link-wrapper .dropdown-c-menu {
+    padding: 0;
+  }
 }
 .main-contents .nav-link-wrapper .dropdown-c-menu .d-item {
   color: #e7dce2;
@@ -236,11 +208,45 @@ body {
 }
 @media (max-width: 767px) {
   .main-contents .nav-link-wrapper .dropdown-c-menu .d-item {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .main-contents .nav-link-wrapper .d-trigger:hover .dropdown-c-menu {
   display: block;
+}
+@media (max-width: 767px) {
+  .main-contents .nav-link-wrapper {
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 0px;
+    left: 0;
+    top: 0;
+    background: #000;
+    overflow-y: scroll;
+    transition: all 0.3s;
+    z-index: 999;
+    white-space: nowrap;
+  }
+  .main-contents .nav-link-wrapper.show {
+    max-width: 420px;
+  }
+  .main-contents .nav-link-wrapper .links {
+    display: block;
+  }
+  .main-contents .nav-link-wrapper .link-n {
+    border-bottom: 1px solid #c01820;
+    display: block;
+  }
+  .main-contents .nav-link-wrapper .link-n.active {
+    background: #000;
+  }
+  .main-contents .nav-link-wrapper .dropdown-c-menu {
+    display: block;
+    position: relative;
+    border: none;
+    padding-bottom: 30px;
+  }
 }
 .main-contents .data-body .wrapper {
   background: #000;

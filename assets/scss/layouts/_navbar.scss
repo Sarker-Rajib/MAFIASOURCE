@@ -11,96 +11,57 @@
         border-bottom-right-radius: 20px;
     }
 
-    .p-name {
-        font-size: 30px;
 
-        @media(max-width:991px) {
-            font-size: 24px;
-        }
+}
 
-        span {
-            color: $color-red;
-        }
+.p-name {
+    font-size: 30px;
+
+    @media(max-width:991px) {
+        font-size: 24px;
     }
 
-    .coin {
-        p {
-            font-size: 21px;
-        }
-    }
-
-    .prog-1 {
-        p {
-            font-size: 21px;
-        }
-
-        .progress-bar {
-            height: 9px;
-            border-radius: 10px;
-            background: rgb(131, 131, 131);
-            background: linear-gradient(180deg, rgba(131, 131, 131, 1) 0%, rgba(194, 194, 194, 1) 100%);
-            box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
-            position: relative;
-
-            .bar {
-                position: absolute;
-                display: block;
-                height: 100%;
-                border-radius: 10px;
-                top: 0;
-                left: 0;
-
-                &.bar-blue {
-                    width: 90%;
-                    background: #01a9f5;
-                }
-
-
-                &.bar-green {
-                    background: #1cf308;
-                    width: 80%;
-                }
-            }
-        }
+    span {
+        color: $color-red;
     }
 }
 
-.side-navbar {
-    background: #000;
+.coin {
+    p {
+        font-size: 21px;
+    }
+}
 
-    .offcanvas-header {
-
-        .b-logo {
-            font-size: 40px;
-            background: $color-red;
-            padding: 6px 50px;
-            border: 1px solid #4a0c0d;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-        }
+.prog-1 {
+    p {
+        font-size: 21px;
     }
 
-    .offcanvas-body {
-        .menu-links {
-            .link-wrapper {
-                padding-bottom: 25px;
+    .progress-bar {
+        height: 9px;
+        border-radius: 10px;
+        background: rgb(131, 131, 131);
+        background: linear-gradient(180deg, rgba(131, 131, 131, 1) 0%, rgba(194, 194, 194, 1) 100%);
+        box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+        position: relative;
 
-                .ttle {
-                    font-size: 20px;
-                    border-bottom: 1px solid $color-red;
-                    margin-bottom: 5px;
-                }
+        .bar {
+            position: absolute;
+            display: block;
+            height: 100%;
+            border-radius: 10px;
+            top: 0;
+            left: 0;
 
-                .m-link {
-                    color: $color-white-l;
-                    font-size: 18px;
-                    display: inline-block;
-                    margin: 3px 0;
+            &.bar-blue {
+                width: 90%;
+                background: #01a9f5;
+            }
 
-                    &:hover {
-                        color: $color-red;
-                    }
-                }
+
+            &.bar-green {
+                background: #1cf308;
+                width: 80%;
             }
         }
     }
